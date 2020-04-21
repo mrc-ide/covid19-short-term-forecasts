@@ -9,7 +9,7 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="date" content="2020-04-15" />
+<meta name="date" content="2020-04-21" />
 
 <title>Short-term forecasts of COVID-19 deaths in multiple countries</title>
 
@@ -97,14 +97,14 @@ $(document).ready(function () {
     </div>
     
     <div id="postamble" data-toggle="wy-nav-shift" class="status">
-              <p class="date"><span class="glyphicon glyphicon-calendar"></span> April 15, 2020</p>
+              <p class="date"><span class="glyphicon glyphicon-calendar"></span> April 21, 2020</p>
         </div>
 </div>
 
 <div id="main">
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
-<p>As of 13-04-2020, more than 1,170,000 cases of COVID-19 have been reported across the world, with more than 111,000 deaths <span class="citation">(1)</span>. This weekly report presents forecasts of the <em>reported</em> number of deaths in the week ahead and analysis of case reporting trends (case ascertainment) for 36 countries with active transmission.</p>
+<p>As of 19-04-2020, more than 2,200,000 cases of COVID-19 have been reported across the world, with more than 150,000 deaths <span class="citation">(1)</span>. This weekly report presents forecasts of the <em>reported</em> number of deaths in the week ahead and analysis of case reporting trends (case ascertainment) for 45 countries with active transmission.</p>
 <p>The accuracy of these forecasts vary with the quality of surveillance and reporting in each country. We use the reported number of deaths due to COVID-19 to make these short-term forecasts as these are likely more reliable and stable over time than reported cases. In countries with poor reporting of deaths, these forecasts will likely represent an under-estimate while the forecasts for countries with few deaths might be unreliable. Our estimates of transmissibility reflect the epidemiological situation at the time of the infection of COVID-19 fatalities. Therefore, the impact of controls on estimated transmissibility will be quantifiable with a delay between transmission and death.</p>
 <div id="summary" class="section level2">
 <h2>Summary</h2>
@@ -116,30 +116,30 @@ Based on our best estimates of transmissibility, the COVID-19 epidemic is:
 </p>
 <ul>
 <li>
-likely declining<sup>1</sup> in 1 countries <br /> (South Korea);
+likely declining<sup>1</sup> in 6 countries <br /> (Dominican Republic, Greece, Iran, Italy, Morocco, Spain);
 </li>
 <li>
-likely stabilising<sup>2</sup> in 19 countries <br /> (Algeria, Austria, China, Czechia, Denmark, Dominican Republic, France, Germany, Iran, Italy, Morocco, Netherlands, Philippines, Poland, Portugal, Spain, Sweden, Switzerland, United Kingdom);
+likely stabilising or growing slowly<sup>2</sup> in 18 countries <br /> (Algeria, Austria, Czechia, Denmark, Egypt, France, Germany, India, Indonesia, Netherlands, Norway, Panama, Philippines, Poland, Portugal, Romania, South Korea, United Kingdom);
 </li>
 <li>
-likely growing slowly<sup>3</sup> in 3 countries <br /> (Ireland, Turkey, United States of America);
-</li>
-<li>
-likely growing rapidly<sup>4</sup> in 13 countries <br /> (Belgium, Brazil, Canada, Colombia, Ecuador, Egypt, India, Indonesia, Israel, Mexico, Peru, Romania, Russia).
+likely growing <sup>3</sup> in 15 countries <br /> (Belgium, Brazil, Canada, Chile, Hungary, Ireland, Japan, Mexico, Pakistan, Peru, Russia, Serbia, Sweden, Turkey, United States of America);
 </li>
 </ul>
+<p>
+The trend is uncertain<sup>4</sup> in 6 countries (Argentina, Colombia, Ecuador, Israel, Switzerland, Ukraine).
+</p>
 <p>
 Based on the central trends in the forecasts, the total number of reported deaths in the coming week is expected to be:
 </p>
 <ul>
 <li>
-relatively small in 6 countries (&lt;100 deaths) <br /> (China, Czechia, Dominican Republic, Israel, Morocco, South Korea);
+relatively small in 16 countries (&lt;100 deaths) <br /> (Algeria, Argentina, Austria, Chile, Colombia, Czechia, Denmark, Dominican Republic, Egypt, Greece, Israel, Morocco, Norway, Panama, Serbia, South Korea);
 </li>
 <li>
-relatively large in 20 countries (100 to 1000 deaths) <br /> (Algeria, Austria, Canada, Colombia, Denmark, Ecuador, Egypt, India, Indonesia, Iran, Ireland, Mexico, Peru, Philippines, Poland, Portugal, Romania, Russia, Sweden, Switzerland),
+relatively large in 18 countries (100 to 1000 deaths) <br /> (Ecuador, Hungary, India, Indonesia, Iran, Ireland, Japan, Mexico, Netherlands, Pakistan, Peru, Philippines, Poland, Portugal, Romania, Russia, Switzerland, Ukraine),
 </li>
 <li>
-large in 7 countries (1,000 to 5,000 deaths) <br /> (Belgium, Brazil, Germany, Italy, Netherlands, Spain, Turkey),
+large in 8 countries (1,000 to 5,000 deaths) <br /> (Belgium, Brazil, Canada, Germany, Italy, Spain, Sweden, Turkey),
 </li>
 <li>
 very large in 3 countries (&gt; 5,000 deaths) <br /> (France, United Kingdom, United States of America).
@@ -153,13 +153,13 @@ very large in 3 countries (&gt; 5,000 deaths) <br /> (France, United Kingdom, Un
 if the 97.5<sup>th</sup> percentile of <span class="math inline"><span class="math inline">\(R_t\)</span></span> is below 1.
 </li>
 <li>
-if the 95% Credible Interval (CrI) of <span class="math inline"><span class="math inline">\(R_t\)</span></span> contains 1.
+if the 2.5<sup>th</sup> percentile of <span class="math inline"><span class="math inline">\(R_t\)</span></span> is below 1 and the 97.5<sup>th</sup> percentile of <span class="math inline"><span class="math inline">\(R_t\)</span></span> is between 1 and 2.
 </li>
 <li>
-if the 2.5<sup>th</sup> percentile of <span class="math inline"><span class="math inline">\(R_t\)</span></span> is greater than 1 and the 97.5<sup>th</sup> percentile is less than 2.
+if the 2.5<sup>th</sup> percentile of <span class="math inline"><span class="math inline">\(R_t\)</span></span> is greater than 1.
 </li>
 <li>
-if the 97.5<sup>th</sup> percentile of <span class="math inline"><span class="math inline">\(R_t\)</span></span> is greater than 2.
+if the 2.5<sup>th</sup> percentile of <span class="math inline"><span class="math inline">\(R_t\)</span></span> is below 1 and the 97.5<sup>th</sup> percentile of <span class="math inline"><span class="math inline">\(R_t\)</span></span> is above 2.
 </li>
 </ol>
 </div>
@@ -168,7 +168,7 @@ if the 97.5<sup>th</sup> percentile of <span class="math inline"><span class="ma
 <h1>Objectives and Caveats</h1>
 <p>The <strong>main</strong> objective in this report is to produce forecasts of the number of deaths in the week ahead for each country with active transmission.</p>
 <ul>
-<li><p>We define a country as having active transmission if at least 100 deaths have been reported in a country so far, and at least <em>ten</em> deaths were observed in the country in each of the past two weeks. For the week beginning 12-04-2020, the number of countries/regions included based on these thresholds is 36.</p></li>
+<li><p>We define a country as having active transmission if at least 100 deaths have been reported in a country so far, and at least <em>ten</em> deaths were observed in the country in each of the past two weeks. For the week beginning 19-04-2020, the number of countries/regions included based on these thresholds is 45.</p></li>
 <li><p>We forecast the number of potential deaths as the reporting of deaths is likely to be more reliable and stable over time than the reporting of cases.</p></li>
 <li><p>As we are forecasting deaths, the latest estimates of transmissibility reflect the epidemiological situation at the time of the infection of COVID-19 fatalities. Therefore, the impact of controls on estimated transmissibility will be quantifiable with a delay between transmission and death.</p></li>
 </ul>
@@ -185,30 +185,31 @@ if the 97.5<sup>th</sup> percentile of <span class="math inline"><span class="ma
 <div id="projections" class="section level2">
 <h2>Projections</h2>
 <p><strong>Current and past forecasts</strong></p>
-<p><em>Note</em>: The projections and estimates of <span class="math inline">\(R_t\)</span> assume a constant reporting of death. That is, even if deaths are not under-reported, we assume a constant reporting rate over time. This assumption does not always hold. For instance, we note that in France, there was a large increase in the reported number of deaths towards the end of the week starting 30-03-2020. This is largely due to back-reporting of deaths outside hospital settings, and therefore, this is likely to have inflated the estimates of <span class="math inline">\(R_t\)</span>, leading to over-estimated forecasts in the following week [ECDC, personal communication].</p>
+<p><em>Note</em>: The projections and estimates of <span class="math inline">\(R_t\)</span> assume a constant reporting of death. That is, even if deaths are not under-reported, we assume a constant reporting rate over time. This assumption does not always hold.</p>
 <div id="europe" class="section level3">
 <h3>Europe</h3>
 <p><img src="figs/ensmbl_pred_Europe_si_2_page_1.png" width="2700" /></p>
 <p><img src="figs/ensmbl_pred_Europe_si_2_page_2.png" width="2700" /></p>
-<p><img src="figs/ensmbl_pred_Europe_si_2_page_3.png" width="2700" /> <em>Figure 1.</em> Reported daily deaths and current forecasts based on the ensemble model. For each European country with active transmission (see Methods), we plot the observed incidence of deaths (black dots). Forecasts for the week ahead are shown in red (median and 95% CrI). Vertical dashed lines show the start and end of each week (Monday to Sunday). Projections and estimates of <span class="math inline">\(R_t\)</span> for countries marked with a * are based on an unweighted ensemble of three models (Models 1, 2 and 3). For countries marked with ** (Austria, Belgium, Denmark, France, Germany, Italy, Netherlands, Portugal, Spain, Sweden, and Switzerland), projections and estimates of <span class="math inline">\(R_t\)</span> are based on an ensemble that includes 4 models (Models 1, 2, 3 and 4). For the United Kingdom, projections and <span class="math inline">\(R_t\)</span> estimates from Model 4 are shown here. Results from individual models are shown in the section Methods.</p>
+<p><img src="figs/ensmbl_pred_Europe_si_2_page_3.png" width="2700" /></p>
+<p><img src="figs/ensmbl_pred_Europe_si_2_page_4.png" width="2700" /> <em>Figure 1.</em> Reported daily deaths and current forecasts based on the ensemble model. For each European country with active transmission (see Methods), we plot the observed incidence of deaths (black dots). Forecasts for the week ahead are shown in red (median and 95% CrI). Vertical dashed lines show the start and end of each week (Monday to Sunday). Projections for countries marked with a * are based on an unweighted ensemble of three models (Models 1, 2 and 3). For countries marked with ** (Austria, Belgium, Denmark, France, Germany, Greece, Italy, Netherlands, Norway, Portugal, Spain, Sweden, Switzerland, and United Kingdom), projections are based on an ensemble that includes 4 models (Models 1, 2, 3 and 4). Results from individual models are shown in the section Methods.</p>
 </div>
 <div id="asia" class="section level3">
 <h3>Asia</h3>
 <p><img src="figs/ensmbl_pred_Asia_si_2_page_1.png" width="2700" /></p>
-<p><img src="figs/ensmbl_pred_Asia_si_2_page_2.png" width="2700" /> <em>Figure 2.</em> Reported daily deaths and current forecasts based on the ensemble model. For each country in Asia with active transmission (see Methods), we plot the observed incidence of deaths (black dots). Forecasts for the week ahead are shown in red (median and 95% CrI). Vertical dashed lines show the start and end of each week (Monday to Sunday). Projections and estimates of <span class="math inline">\(R_t\)</span> for countries marked with a * are based on an unweighted ensemble of three models (Models 1, 2 and 3, see Methods).</p>
+<p><img src="figs/ensmbl_pred_Asia_si_2_page_2.png" width="2700" /> <em>Figure 2.</em> Reported daily deaths and current forecasts based on the ensemble model. For each country in Asia with active transmission (see Methods), we plot the observed incidence of deaths (black dots). Forecasts for the week ahead are shown in red (median and 95% CrI). Vertical dashed lines show the start and end of each week (Monday to Sunday). Projections for countries marked with a * are based on an unweighted ensemble of three models (Models 1, 2 and 3, see Methods).</p>
 </div>
 <div id="africa" class="section level3">
 <h3>Africa</h3>
-<p><img src="figs/ensmbl_pred_Africa_si_2_page_1.png" width="2700" /> <em>Figure 3.</em> Reported daily deaths and current forecasts based on the ensemble model. For each country in Africa with active transmission (see Methods), we plot the observed incidence of deaths (black dots). Forecasts for the week ahead are shown in red (median and 95% CrI). Vertical dashed lines show the start and end of each week (Monday to Sunday). Projections and estimates of <span class="math inline">\(R_t\)</span> for countries marked with a * are based on an unweighted ensemble of three models (Models 1, 2 and 3, see Methods).</p>
+<p><img src="figs/ensmbl_pred_Africa_si_2_page_1.png" width="2700" /> <em>Figure 3.</em> Reported daily deaths and current forecasts based on the ensemble model. For each country in Africa with active transmission (see Methods), we plot the observed incidence of deaths (black dots). Forecasts for the week ahead are shown in red (median and 95% CrI). Vertical dashed lines show the start and end of each week (Monday to Sunday). Projections for countries marked with a * are based on an unweighted ensemble of three models (Models 1, 2 and 3, see Methods).</p>
 </div>
 <div id="north-america" class="section level3">
 <h3>North America</h3>
-<p><img src="figs/ensmbl_pred_North%20America_si_2_page_1.png" width="2700" /> <em>Figure 4.</em> Reported daily deaths and current forecasts based on the ensemble model. For each country in North America with active transmission (see Methods), we plot the observed incidence of deaths (black dots). Forecasts for the week ahead are shown in red (median and 95% CrI). Vertical dashed lines show the start and end of each week (Monday to Sunday). Projections and estimates of <span class="math inline">\(R_t\)</span> for countries marked with a * are based on an unweighted ensemble of three models (Models 1, 2 and 3, see Methods).</p>
+<p><img src="figs/ensmbl_pred_North%20America_si_2_page_1.png" width="2700" /> <em>Figure 4.</em> Reported daily deaths and current forecasts based on the ensemble model. For each country in North America with active transmission (see Methods), we plot the observed incidence of deaths (black dots). Forecasts for the week ahead are shown in red (median and 95% CrI). Vertical dashed lines show the start and end of each week (Monday to Sunday). Projections for countries marked with a * are based on an unweighted ensemble of three models (Models 1, 2 and 3, see Methods).</p>
 </div>
 <div id="south-america" class="section level3">
 <h3>South America</h3>
 <p><img src="figs/ensmbl_pred_South%20America_si_2_page_1.png" width="2700" /></p>
-<p><em>Figure 5.</em> Reported daily deaths and current forecasts based on the ensemble model. For each country in South America with active transmission (see Methods), we plot the observed incidence of deaths (black dots). Forecasts for the week ahead are shown in red (median and 95% CrI). Vertical dashed lines show the start and end of each week (Monday to Sunday). Projections and estimates of <span class="math inline">\(R_t\)</span> for countries marked with a * are based on an unweighted ensemble of three models (Models 1, 2 and 3, see Methods).</p>
+<p><em>Figure 5.</em> Reported daily deaths and current forecasts based on the ensemble model. For each country in South America with active transmission (see Methods), we plot the observed incidence of deaths (black dots). Forecasts for the week ahead are shown in red (median and 95% CrI). Vertical dashed lines show the start and end of each week (Monday to Sunday). Projections for countries marked with a * are based on an unweighted ensemble of three models (Models 1, 2 and 3, see Methods).</p>
 <p><br><br></p>
 </div>
 </div>
@@ -216,7 +217,7 @@ if the 97.5<sup>th</sup> percentile of <span class="math inline"><span class="ma
 <h2>Estimates of the current Effective Reproduction Number</h2>
 <div id="europe-1" class="section level3">
 <h3>Europe</h3>
-<p><img src="figs/ensemble_rt_Europe_si_2_boxplot.png" width="2700" /> <em>Figure 6.</em> Latest estimates of effective reproduction numbers by country (median, inter-quartile range and 95% CrI) for each country in Europe with sustained transmission. Estimates of <span class="math inline">\(R_t\)</span> for countries marked with a * are based on an unweighted ensemble of two models (Models 1 and 2; Model 3 does not estimate <span class="math inline">\(R_t\)</span>). For countries marked with ** (Austria, Belgium, Denmark, France, Germany, Italy, Netherlands, Portugal, Spain, Sweden, and Switzerland), projections and estimates of <span class="math inline">\(R_t\)</span> are based on an ensemble that includes 3 models (Models 1, 2, and 4). For the United Kingdom, <span class="math inline">\(R_t\)</span> estimates from Model 4 are shown here. Results from individual models are shown in the section Methods.</p>
+<p><img src="figs/ensemble_rt_Europe_si_2_boxplot.png" width="2700" /> <em>Figure 6.</em> Latest estimates of effective reproduction numbers by country (median, inter-quartile range and 95% CrI) for each country in Europe with sustained transmission. Estimates of <span class="math inline">\(R_t\)</span> for countries marked with a * are based on an unweighted ensemble of two models (Models 1 and 2; Model 3 does not estimate <span class="math inline">\(R_t\)</span>). For countries marked with ** (Austria, Belgium, Denmark, France, Germany, Greece, Italy, Netherlands, Norway, Portugal, Spain, Sweden, Switzerland, and United Kingdom), estimates of <span class="math inline">\(R_t\)</span> are based on an ensemble that includes 3 models (Models 1, 2, and 4).</p>
 </div>
 <div id="asia-1" class="section level3">
 <h3>Asia</h3>
@@ -237,9 +238,9 @@ if the 97.5<sup>th</sup> percentile of <span class="math inline"><span class="ma
 </div>
 <div id="summary-of-results" class="section level2">
 <h2>Summary of results</h2>
-<p><strong>Table 1.</strong> Forecasted weekly death counts for week starting 2020-04-12, the observed number of deaths in the week before, and the estimated levels of transmissibility from the ensemble model for each country with active transmission (see Methods). For the forecasted weekly deaths counts and estimates of <span class="math inline">\(R_t\)</span>, the table shows the median estimate and the 95% CrI. The number of deaths has been rounded to 3 significant figures.</p>
-<div id="htmlwidget-af6b9d3ed2a73c8180b4" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-af6b9d3ed2a73c8180b4">{"x":{"filter":"none","data":[["Algeria","Austria","Belgium","Brazil","Canada","China","Colombia","Czechia","Denmark","Dominican Republic","Ecuador","Egypt","France","Germany","India","Indonesia","Iran","Ireland","Israel","Italy","Mexico","Morocco","Netherlands","Peru","Philippines","Poland","Portugal","Romania","Russia","South Korea","Spain","Sweden","Switzerland","Turkey","United Kingdom","United States of America"],[145,151,2063,692,422,10,68,70,99,58,143,80,6272,1331,196,136,905,183,55,4108,194,52,992,108,103,129,204,141,63,31,4609,514,291,600,5562,12107],["172 (77 - 242)","147 (69 - 321)","4,080 (1,710 - 5,340)","1,420 (792 - 2,000)","744 (540 - 1,080)","9 (1 - 86)","192 (94 - 570)","77 (46 - 158)","109 (53 - 170)","74 (39 - 150)","249 (188 - 447)","215 (126 - 479)","6,870 (5,000 - 9,970)","1,570 (1,220 - 2,320)","544 (264 - 813)","508 (187 - 1,030)","797 (651 - 939)","290 (199 - 445)","99 (48 - 238)","3,550 (3,190 - 4,890)","413 (287 - 782)","44 (15 - 90)","1,010 (809 - 1,560)","372 (182 - 497)","104 (61 - 801)","205 (88 - 314)","244 (173 - 428)","285 (177 - 733)","217 (138 - 1,040)","16 (4 - 32)","3,870 (3,460 - 7,360)","778 (366 - 2,300)","310 (205 - 472)","1,010 (678 - 1,160)","6,450 (5,030 - 8,600)","20,700 (17,300 - 27,100)"],["0.94 (0.65 - 1.40)","1.06 (0.64 - 1.79)","1.97 (1.05 - 2.11)","1.57 (1.14 - 2.27)","1.81 (1.31 - 2.06)","1.06 (0.31 - 4.17)","2.76 (1.70 - 4.05)","1.31 (0.86 - 1.89)","0.89 (0.55 - 1.28)","1.36 (0.90 - 1.97)","1.70 (1.28 - 2.14)","2.34 (1.59 - 3.53)","1.09 (0.78 - 1.40)","1.10 (0.68 - 1.54)","2.07 (1.45 - 3.00)","2.94 (2.23 - 3.86)","0.88 (0.75 - 1.02)","1.50 (1.18 - 1.94)","1.87 (1.39 - 2.83)","0.83 (0.57 - 1.10)","2.19 (1.57 - 2.88)","0.74 (0.36 - 1.22)","0.91 (0.53 - 1.10)","2.29 (1.65 - 2.85)","2.14 (0.66 - 3.99)","1.51 (0.75 - 2.07)","1.26 (0.52 - 1.78)","1.99 (1.42 - 3.18)","3.53 (1.86 - 5.46)","0.42 (0.19 - 0.97)","0.82 (0.75 - 1.04)","1.69 (0.69 - 2.76)","0.98 (0.54 - 1.35)","1.47 (1.16 - 1.69)","0.80 (0.59 - 1.05)","1.70 (1.51 - 1.91)"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Country<\/th>\n      <th>Deaths Observed (last week)<\/th>\n      <th>Predicted Deaths (this week)<\/th>\n      <th>R_t<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<p><strong>Table 1.</strong> Forecasted weekly death counts for week starting 2020-04-19, the observed number of deaths in the week before, and the estimated levels of transmissibility from the ensemble model for each country with active transmission (see Methods). For the forecasted weekly deaths counts and estimates of <span class="math inline">\(R_t\)</span>, the table shows the median estimate and the 95% CrI. The number of deaths has been rounded to 3 significant figures.</p>
+<div id="htmlwidget-4dd5f37364a3b8659db2" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4dd5f37364a3b8659db2">{"x":{"filter":"none","data":[["Algeria","Argentina","Austria","Belgium","Brazil","Canada","Chile","Colombia","Czechia","Denmark","Dominican Republic","Ecuador","Egypt","France","Germany","Greece","Hungary","India","Indonesia","Iran","Ireland","Israel","Italy","Japan","Mexico","Morocco","Netherlands","Norway","Pakistan","Panama","Peru","Philippines","Poland","Portugal","Romania","Russia","Serbia","South Korea","Spain","Sweden","Switzerland","Turkey","Ukraine","United Kingdom","United States of America"],[92,43,106,2107,1223,814,53,66,52,86,82,141,78,5491,1621,12,90,234,208,674,251,63,3757,63,377,26,958,50,73,41,167,150,139,217,135,207,43,20,3690,624,279,789,68,5589,18302],["71 (28 - 106)","52 (27 - 249)","94 (55 - 165)","2,600 (1,960 - 3,610)","2,410 (1,660 - 3,020)","1,950 (770 - 2,580)","80 (46 - 249)","78 (46 - 222)","38 (22 - 81)","71.3 (47 - 138)","32 (10 - 139)","198 (126 - 556)","95 (47 - 156)","5,450 (4,090 - 7,170)","1,520 (1,040 - 2,650)","9.75 (0 - 16.3)","142 (95 - 316)","301 (152 - 424)","164 (46 - 365)","463 (327 - 564)","480 (366 - 940)","70 (37 - 270)","2,730 (1,960 - 3,870)","130 (70 - 263)","740 (555 - 1,450)","14 (2 - 46)","975 (696 - 1,740)","37.7 (18 - 62.2)","122 (66 - 306)","42 (14 - 95)","391 (280 - 1,010)","118 (53 - 176)","133 (66 - 231)","190 (130 - 284)","121 (53 - 170)","558 (353 - 817)","83 (44 - 210)","12 (4 - 39)","3,320 (2,460 - 4,850)","1,280 (631 - 2,150)","242 (158 - 1,020)","1,100 (936 - 1,350)","129 (55 - 185)","5,950 (4,350 - 7,320)","31,700 (17,800 - 34,300)"],["0.65 (0.29 - 1.03)","1.66 (0.71 - 3.48)","0.79 (0.60 - 1.39)","1.24 (1.08 - 1.48)","1.81 (1.63 - 1.99)","2.08 (1.89 - 2.37)","1.72 (1.15 - 3.00)","1.42 (0.75 - 2.24)","0.87 (0.63 - 1.21)","0.74 (0.55 - 1.44)","0.31 (0.11 - 0.80)","1.65 (0.91 - 2.69)","1.12 (0.71 - 1.63)","0.94 (0.77 - 1.21)","0.82 (0.63 - 1.46)","0.31 (0.03 - 0.75)","1.80 (1.12 - 2.40)","1.07 (0.72 - 1.42)","0.46 (0.21 - 1.14)","0.65 (0.51 - 0.82)","1.80 (1.36 - 2.69)","1.45 (0.87 - 2.66)","0.65 (0.55 - 1.00)","1.93 (1.19 - 2.82)","1.92 (1.58 - 2.73)","0.36 (0.16 - 0.85)","0.68 (0.51 - 1.60)","0.67 (0.43 - 1.09)","1.82 (1.33 - 2.66)","0.93 (0.48 - 1.91)","2.29 (1.52 - 3.37)","0.59 (0.38 - 1.16)","0.93 (0.56 - 1.46)","0.72 (0.52 - 1.20)","0.77 (0.39 - 1.10)","2.29 (1.63 - 2.80)","2.04 (1.44 - 2.93)","0.81 (0.31 - 1.42)","0.77 (0.67 - 0.89)","1.56 (1.12 - 2.09)","0.69 (0.53 - 2.57)","1.36 (1.20 - 1.53)","1.45 (0.90 - 2.08)","0.75 (0.60 - 1.26)","1.57 (1.44 - 1.63)"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Country<\/th>\n      <th>Deaths Observed (last week)<\/th>\n      <th>Predicted Deaths (this week)<\/th>\n      <th>R_t<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div id="analysis-of-trends-in-reporting" class="section level1">
@@ -252,6 +253,7 @@ if the 97.5<sup>th</sup> percentile of <span class="math inline"><span class="ma
 <p><img src="figs/reporting_ratio_Europe_page_1.png" width="2700" /></p>
 <p><img src="figs/reporting_ratio_Europe_page_2.png" width="2700" /></p>
 <p><img src="figs/reporting_ratio_Europe_page_3.png" width="2700" /></p>
+<p><img src="figs/reporting_ratio_Europe_page_4.png" width="2700" /></p>
 </div>
 <div id="asia-2" class="section level3">
 <h3>Asia</h3>
@@ -277,8 +279,8 @@ if the 97.5<sup>th</sup> percentile of <span class="math inline"><span class="ma
 <h2>Case Ascertainment</h2>
 <p>Case ascertainment was estimated based on the deaths in the previous 2 weeks and reported cases in the 10 days prior to that period. Estimates of case ascertainment were highly variable and, due to the underlying assumption of perfect reporting, are likely to be an underestimate. In particular, community deaths due to COVID-19 are likely under-reported <span class="citation">(3)</span>.</p>
 <p><strong>Table 2.</strong> Results summary for reporting and case ascertainment. We present (<strong>i</strong>) the estimated ratio of deaths to reported cases 10 days prior for each country (mean and 95% CI) during the last <em>14 days</em>; (<strong>ii</strong>) the estimated case ascertainment per country (mean and 95% CI) during the last <em>14 days</em>. Estimated case ascertainment, factors to real size and predicted true number of cases assume perfect reporting of deaths.</p>
-<div id="htmlwidget-d28919792e2c2ffe14fd" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d28919792e2c2ffe14fd">{"x":{"filter":"none","data":[["United States of America","United Kingdom","Turkey","Switzerland","Sweden","Spain","South Korea","Russia","Romania","Portugal","Poland","Philippines","Peru","Netherlands","Morocco","Mexico","Italy","Israel","Ireland","Iran","Indonesia","India","Germany","France","Egypt","Ecuador","Dominican Republic","Denmark","Czechia","Colombia","China","Canada","Brazil","Belgium","Austria","Algeria"],["0.082 (0.081 - 0.084)","0.283 (0.276 - 0.289)","0.047 (0.043 - 0.051)","0.04 (0.036 - 0.045)","0.21 (0.194 - 0.227)","0.087 (0.084 - 0.089)","0.044 (0.031 - 0.062)","0.028 (0.022 - 0.035)","0.087 (0.074 - 0.102)","0.04 (0.035 - 0.046)","0.081 (0.069 - 0.096)","0.061 (0.05 - 0.073)","0.141 (0.118 - 0.166)","0.141 (0.133 - 0.15)","0.123 (0.094 - 0.156)","0.223 (0.196 - 0.252)","0.115 (0.112 - 0.119)","0.016 (0.012 - 0.02)","0.094 (0.082 - 0.108)","0.047 (0.044 - 0.05)","0.156 (0.132 - 0.181)","0.143 (0.125 - 0.162)","0.037 (0.035 - 0.039)","0.215 (0.21 - 0.219)","0.263 (0.217 - 0.315)","0.097 (0.083 - 0.113)","0.071 (0.055 - 0.09)","0.07 (0.058 - 0.085)","0.038 (0.03 - 0.048)","0.112 (0.088 - 0.138)","0.016 (0.008 - 0.028)","0.063 (0.058 - 0.069)","0.158 (0.147 - 0.169)","0.238 (0.229 - 0.247)","0.034 (0.029 - 0.039)","0.277 (0.24 - 0.315)"],["16.7% (14.9% - 18.6%)","4.9% (4.3% - 5.4%)","29.2% (25.5% - 33.4%)","34.5% (29.4% - 40.3%)","6.6% (5.7% - 7.5%)","15.8% (14.2% - 17.7%)","30.9% (21.8% - 44.7%)","49.4% (38.2% - 65.1%)","15.7% (13.0% - 19.1%)","34.3% (28.9% - 40.7%)","17.0% (13.9% - 20.6%)","22.7% (18.3% - 28.3%)","9.8% (8.0% - 12.0%)","9.7% (8.6% - 11.0%)","11.2% (8.6% - 15.0%)","6.1% (5.2% - 7.3%)","11.9% (10.6% - 13.3%)","86.5% (65.8% - 100.0%)","14.7% (12.3% - 17.5%)","29.4% (25.9% - 33.3%)","8.8% (7.3% - 10.7%)","9.7% (8.2% - 11.5%)","37.2% (32.9% - 42.2%)","6.4% (5.7% - 7.2%)","5.2% (4.2% - 6.6%)","14.2% (11.7% - 17.1%)","19.5% (14.9% - 25.8%)","19.5% (15.7% - 24.4%)","35.9% (28.2% - 46.6%)","12.3% (9.7% - 16.0%)","85.9% (49.4% - 100.0%)","21.8% (18.9% - 25.1%)","8.7% (7.7% - 9.9%)","5.8% (5.1% - 6.5%)","40.8% (33.7% - 49.7%)","5.0% (4.2% - 5.9%)"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Country<\/th>\n      <th>Deaths to Reported Ratio<\/th>\n      <th>Estimated Reporting<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-c7cb65f5071a970082ed" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c7cb65f5071a970082ed">{"x":{"filter":"none","data":[["United States of America","United Kingdom","Ukraine","Turkey","Switzerland","Sweden","Spain","South Korea","Serbia","Russia","Romania","Portugal","Poland","Philippines","Peru","Panama","Pakistan","Norway","Netherlands","Morocco","Mexico","Japan","Italy","Israel","Ireland","Iran","Indonesia","India","Hungary","Greece","Germany","France","Egypt","Ecuador","Dominican Republic","Denmark","Czechia","Colombia","Chile","Canada","Brazil","Belgium","Austria","Argentina","Algeria"],["0.086 (0.085 - 0.087)","0.18 (0.176 - 0.185)","0.067 (0.053 - 0.084)","0.035 (0.032 - 0.037)","0.05 (0.044 - 0.055)","0.182 (0.169 - 0.195)","0.083 (0.081 - 0.086)","0.044 (0.028 - 0.066)","0.028 (0.02 - 0.037)","0.034 (0.03 - 0.039)","0.06 (0.05 - 0.07)","0.042 (0.037 - 0.048)","0.055 (0.046 - 0.064)","0.099 (0.085 - 0.115)","0.055 (0.047 - 0.064)","0.035 (0.025 - 0.046)","0.034 (0.027 - 0.042)","0.039 (0.029 - 0.051)","0.134 (0.127 - 0.142)","0.042 (0.028 - 0.06)","0.213 (0.195 - 0.233)","0.029 (0.023 - 0.037)","0.129 (0.125 - 0.133)","0.017 (0.013 - 0.021)","0.081 (0.072 - 0.091)","0.039 (0.036 - 0.042)","0.155 (0.136 - 0.175)","0.06 (0.053 - 0.068)","0.193 (0.158 - 0.23)","0.025 (0.014 - 0.041)","0.047 (0.045 - 0.049)","0.204 (0.199 - 0.209)","0.1 (0.08 - 0.122)","0.063 (0.054 - 0.074)","0.086 (0.069 - 0.105)","0.04 (0.033 - 0.049)","0.031 (0.023 - 0.04)","0.066 (0.052 - 0.083)","0.021 (0.016 - 0.027)","0.087 (0.081 - 0.092)","0.136 (0.129 - 0.143)","0.223 (0.214 - 0.231)","0.044 (0.037 - 0.053)","0.061 (0.045 - 0.08)","0.131 (0.107 - 0.157)"],["16.0% (14.3% - 17.8%)","7.6% (6.8% - 8.5%)","20.4% (16.0% - 26.6%)","39.6% (34.7% - 44.9%)","27.8% (23.7% - 32.5%)","7.6% (6.6% - 8.6%)","16.5% (14.7% - 18.5%)","31.0% (20.5% - 50.4%)","49.5% (36.4% - 69.3%)","40.6% (34.2% - 48.2%)","23.1% (19.0% - 28.2%)","32.7% (27.6% - 38.9%)","25.0% (20.6% - 30.5%)","13.8% (11.5% - 16.7%)","25.0% (20.8% - 30.3%)","39.7% (29.2% - 55.5%)","40.3% (31.7% - 52.4%)","35.3% (26.5% - 47.6%)","10.2% (9.0% - 11.6%)","32.5% (22.7% - 49.4%)","6.4% (5.6% - 7.4%)","47.3% (36.5% - 62.2%)","10.7% (9.5% - 11.9%)","82.1% (62.9% - 100.0%)","17.0% (14.5% - 20.0%)","35.3% (30.9% - 40.2%)","8.9% (7.5% - 10.5%)","22.8% (19.3% - 27.0%)","7.2% (5.8% - 8.9%)","54.6% (32.8% - 100.0%)","29.2% (25.9% - 32.8%)","6.8% (6.0% - 7.5%)","13.8% (10.9% - 17.6%)","21.7% (18.0% - 26.3%)","16.0% (12.7% - 20.4%)","34.1% (27.1% - 43.4%)","44.4% (33.4% - 60.0%)","20.8% (16.2% - 26.9%)","65.2% (49.2% - 88.2%)","15.9% (13.9% - 18.0%)","10.1% (8.9% - 11.4%)","6.2% (5.5% - 6.9%)","31.0% (25.1% - 38.4%)","22.5% (16.8% - 31.2%)","10.5% (8.5% - 13.3%)"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Country<\/th>\n      <th>Deaths to Reported Ratio<\/th>\n      <th>Estimated Reporting<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div id="methods" class="section level1">
@@ -379,52 +381,53 @@ D_{i, t} \sim Binom\left( \int\limits_0^{\infty}{\Gamma(x \mid \mu,
 <h4>Europe</h4>
 <p><img src="figs/Europe_si_2_page_1.png" width="2700" /></p>
 <p><img src="figs/Europe_si_2_page_2.png" width="2700" /></p>
-<p><img src="figs/Europe_si_2_page_3.png" width="2700" /> <em>Figure 12.</em> Projections (7-day ahead) for the week starting 12-04-2020 from individual models for each country in Europe with active transmission (see Methods). For countries marked with a *, projections from four models are available (Models 1, 2, 3 and 4). For countries marked with **, projections from Models 1, 2 and 3 are available. For each model, the solid line shows the median and the shaded region shows the 95% CrI of the projections.</p>
+<p><img src="figs/Europe_si_2_page_3.png" width="2700" /></p>
+<p><img src="figs/Europe_si_2_page_4.png" width="2700" /> <em>Figure 12.</em> Projections (7-day ahead) for the week starting 19-04-2020 from individual models for each country in Europe with active transmission (see Methods). For countries marked with a *, projections from four models are available (Models 1, 2, 3 and 4). For countries marked with **, projections from Models 1, 2 and 3 are available. For each model, the solid line shows the median and the shaded region shows the 95% CrI of the projections.</p>
 </div>
 <div id="asia-3" class="section level4">
 <h4>Asia</h4>
 <p><img src="figs/Asia_si_2_page_1.png" width="2700" /></p>
-<p><img src="figs/Asia_si_2_page_2.png" width="2700" /> <em>Figure 13.</em> Projections (7-day ahead) for the week starting 12-04-2020 from individual models (Models 1, 2 and 3) for each country in Asia with active transmission (see Methods). For each model, the solid line shows the median and the shaded region shows the 95% CrI of the projections.</p>
+<p><img src="figs/Asia_si_2_page_2.png" width="2700" /> <em>Figure 13.</em> Projections (7-day ahead) for the week starting 19-04-2020 from individual models (Models 1, 2 and 3) for each country in Asia with active transmission (see Methods). For each model, the solid line shows the median and the shaded region shows the 95% CrI of the projections.</p>
 </div>
 <div id="africa-3" class="section level4">
 <h4>Africa</h4>
 <p><img src="figs/Africa_si_2_page_1.png" width="2700" /></p>
-<p><em>Figure 14.</em> Projections (7-day ahead) for the week starting 12-04-2020 from individual models (Models 1, 2 and 3) for each country in Africa with active transmission (see Methods). For each model, the solid line shows the median and the shaded region shows the 95% CrI of the projections.</p>
+<p><em>Figure 14.</em> Projections (7-day ahead) for the week starting 19-04-2020 from individual models (Models 1, 2 and 3) for each country in Africa with active transmission (see Methods). For each model, the solid line shows the median and the shaded region shows the 95% CrI of the projections.</p>
 </div>
 <div id="north-america-3" class="section level4">
 <h4>North America</h4>
 <p><img src="figs/North%20America_si_2_page_1.png" width="2700" /></p>
-<p><em>Figure 15.</em> Projections (7-day ahead) for the week starting 12-04-2020 from individual models (Models 1, 2 and 3) for each country in North America with active transmission (see Methods). Model 4 did not include these countries. For each model, the solid line shows the median and the shaded region shows the 95% CrI of the projections.</p>
+<p><em>Figure 15.</em> Projections (7-day ahead) for the week starting 19-04-2020 from individual models (Models 1, 2 and 3) for each country in North America with active transmission (see Methods). Model 4 did not include these countries. For each model, the solid line shows the median and the shaded region shows the 95% CrI of the projections.</p>
 </div>
 <div id="south-america-3" class="section level4">
 <h4>South America</h4>
 <p><img src="figs/South%20America_si_2_page_1.png" width="2700" /></p>
-<p><em>Figure 16.</em> Projections (7-day ahead) for the week starting 12-04-2020 from individual models (Models 1, 2 and 3) for each country in South America with active transmission (see Methods). For each model, the solid line shows the median and the shaded region shows the 95% CrI of the projections.</p>
+<p><em>Figure 16.</em> Projections (7-day ahead) for the week starting 19-04-2020 from individual models (Models 1, 2 and 3) for each country in South America with active transmission (see Methods). For each model, the solid line shows the median and the shaded region shows the 95% CrI of the projections.</p>
 </div>
 </div>
 <div id="effective-reproduction-number" class="section level3">
 <h3>Effective Reproduction Number</h3>
 <div id="europe-4" class="section level4">
 <h4>Europe</h4>
-<p><img src="figs/rt_si_2_2020-04-12_Europe.png" width="2700" /> <em>Figure 17.</em> Estimates of <span class="math inline">\(R_t\)</span> from individual models for each country in Europe with active transmission (see Methods) for the week starting 12-04-2020. For countries marked with a **, <span class="math inline">\(R_t\)</span> estimates from three models are available (Models 1, 2, and 4). For countries marked with *, estimates from Models 1 and 2 are available.</p>
+<p><img src="figs/rt_si_2_2020-04-19_Europe.png" width="2700" /> <em>Figure 17.</em> Estimates of <span class="math inline">\(R_t\)</span> from individual models for each country in Europe with active transmission (see Methods) for the week starting 19-04-2020. For countries marked with a **, <span class="math inline">\(R_t\)</span> estimates from three models are available (Models 1, 2, and 4). For countries marked with *, estimates from Models 1 and 2 are available.</p>
 </div>
 <div id="asia-4" class="section level4">
 <h4>Asia</h4>
-<p><img src="figs/rt_si_2_2020-04-12_Asia.png" width="2700" /></p>
-<p><em>Figure 18.</em> Estimates of <span class="math inline">\(R_t\)</span> from individual models for each country in Asia with active transmission (see Methods) for the week starting 12-04-2020. For countries marked with a *, <span class="math inline">\(R_t\)</span> estimates from two models are available (Models 1 and 2).</p>
+<p><img src="figs/rt_si_2_2020-04-19_Asia.png" width="2700" /></p>
+<p><em>Figure 18.</em> Estimates of <span class="math inline">\(R_t\)</span> from individual models for each country in Asia with active transmission (see Methods) for the week starting 19-04-2020. For countries marked with a *, <span class="math inline">\(R_t\)</span> estimates from two models are available (Models 1 and 2).</p>
 </div>
 <div id="africa-4" class="section level4">
 <h4>Africa</h4>
-<p><img src="figs/rt_si_2_2020-04-12_Africa.png" width="2700" /></p>
-<p><em>Figure 19.</em> Estimates of <span class="math inline">\(R_t\)</span> from individual models for each country in Africa with active transmission (see Methods) for the week starting 12-04-2020. For countries marked with a *, <span class="math inline">\(R_t\)</span> estimates from two models are available (Models 1 and 2).</p>
+<p><img src="figs/rt_si_2_2020-04-19_Africa.png" width="2700" /></p>
+<p><em>Figure 19.</em> Estimates of <span class="math inline">\(R_t\)</span> from individual models for each country in Africa with active transmission (see Methods) for the week starting 19-04-2020. For countries marked with a *, <span class="math inline">\(R_t\)</span> estimates from two models are available (Models 1 and 2).</p>
 </div>
 <div id="north-america-4" class="section level4">
 <h4>North America</h4>
-<p><img src="figs/rt_si_2_2020-04-12_North%20America.png" width="2700" /> <em>Figure 20.</em> Estimates of <span class="math inline">\(R_t\)</span> from individual models for each country in North America with active transmission (see Methods) for the week starting 12-04-2020. For countries marked with a *, <span class="math inline">\(R_t\)</span> estimates from two models are available (Models 1 and 2).</p>
+<p><img src="figs/rt_si_2_2020-04-19_North%20America.png" width="2700" /> <em>Figure 20.</em> Estimates of <span class="math inline">\(R_t\)</span> from individual models for each country in North America with active transmission (see Methods) for the week starting 19-04-2020. For countries marked with a *, <span class="math inline">\(R_t\)</span> estimates from two models are available (Models 1 and 2).</p>
 </div>
 <div id="south-america-4" class="section level4">
 <h4>South America</h4>
-<p><img src="figs/rt_si_2_2020-04-12_South%20America.png" width="2700" /> <em>Figure 21.</em> Estimates of <span class="math inline">\(R_t\)</span> from individual models for each country in Africa with active transmission (see Methods) for the week starting 12-04-2020. For countries marked with a *, <span class="math inline">\(R_t\)</span> estimates from two models are available (Models 1 and 2).</p>
+<p><img src="figs/rt_si_2_2020-04-19_South%20America.png" width="2700" /> <em>Figure 21.</em> Estimates of <span class="math inline">\(R_t\)</span> from individual models for each country in Africa with active transmission (see Methods) for the week starting 19-04-2020. For countries marked with a *, <span class="math inline">\(R_t\)</span> estimates from two models are available (Models 1 and 2).</p>
 </div>
 </div>
 </div>
@@ -435,14 +438,14 @@ D_{i, t} \sim Binom\left( \int\limits_0^{\infty}{\Gamma(x \mid \mu,
 </div>
 <div id="authors" class="section level1">
 <h1>Authors</h1>
-<p>Sangeeta Bhatia, Anne Cori, Kris V Parag, Kylie E C Ainslie, Marc Baguelin, Samir Bhatt, Adhiratha Boonyasiri, Olivia Boyd, Lorenzo Cattarino, Zulma Cucunubá, Gina Cuomo-Dannenburg, Amy Dighe, Ilaria Dorigatti, Sabine van Elsland, Rich FitzJohn, Han Fu, Katy Gaythorpe, Will Green, Arran Hamlet, David Haw, Sarah Hayes, Wes Hinsley, Natsuko Imai, David Jorgensen, Edward Knock, Daniel Laydon, Swapnil Mishra, Gemma Nedjati-Gilani, Lucy C Okell, Steven Riley, Hayley Thompson, Juliette Unwin, Robert Verity, Michaela Vollmer, Caroline Walters, Hao Wei Wang, Patrick GT Walker, Oliver Watson, Charles Whittaker, Yuanrong Wang, Peter Winskill, Xiaoyue Xi, Azra C Ghani, Christl A Donnelly, Neil M Ferguson, Pierre Nouvellet</p>
+<p>Sangeeta Bhatia, Anne Cori, Kris V Parag, Swapnil Mishra, Kylie E C Ainslie, Marc Baguelin, Samir Bhatt, Adhiratha Boonyasiri, Olivia Boyd, Lorenzo Cattarino, Zulma Cucunubá, Gina Cuomo-Dannenburg, Amy Dighe, Ilaria Dorigatti, Sabine van Elsland, Rich FitzJohn, Han Fu, Katy Gaythorpe, Will Green, Arran Hamlet, David Haw, Sarah Hayes, Wes Hinsley, Natsuko Imai, David Jorgensen, Edward Knock, Daniel Laydon, Gemma Nedjati-Gilani, Lucy C Okell, Steven Riley, Hayley Thompson, Juliette Unwin, Robert Verity, Michaela Vollmer, Caroline Walters, Hao Wei Wang, Patrick GT Walker, Oliver Watson, Charles Whittaker, Yuanrong Wang, Peter Winskill, Xiaoyue Xi, Azra C Ghani, Christl A Donnelly, Neil M Ferguson, Pierre Nouvellet</p>
 <div id="references" class="section level2">
 <h2>References</h2>
 <p>The forecasts produced use the reported daily counts of deaths per country available on the ECDC website:</p>
 <p><a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" class="uri">https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide</a></p>
 <div id="refs" class="references">
 <div id="ref-whositrep">
-<p>1. Coronavirus disease 2019 (COVID-19) Situation Report – 84. 2020</p>
+<p>1. Coronavirus disease 2019 (COVID-19) Situation Report – 90. 2020</p>
 </div>
 <div id="ref-verity2020">
 <p>2. Verity R, Okell L, Dorigatti I, Winskill P, Whittaker C, et al. 2020. Estimates of the severity of coronavirus disease 2019: A model-based analysis. <em>Lancet Infectious Diseases</em></p>
@@ -475,10 +478,24 @@ D_{i, t} \sim Binom\left( \int\limits_0^{\infty}{\Gamma(x \mid \mu,
 
 
 
+<div id = "footer">
+  &nbsp;
+<br/>This work is licensed under a <a rel="license"
+                                       href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative
+  Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+  License</a>.    
+<a href = "https://www.sussex.ac.uk">
+<img class = "logo" alt="https://www.sussex.ac.uk" src="Sussex.png"
+     align="right" height = "80" width = "100"></a>
+<a href = "https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/">
+<img class = "logo" src="MRC-GIDA-logo.png" align="right" height = "80" width = "150"> </a>
 &nbsp;
-<img class = "logo" alt="https://www.sussex.ac.uk" src="Sussex.png" align="right">
-<img class = "logo" alt="https://www.imperial.ac.uk" src="imperial.png" align="right">
-&nbsp;
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+  <img alt="Creative Commons Licence" style="border-width:0"
+       src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"/></a>
+
+
+</div>
 
 <script>
 $(document).ready(function () {
