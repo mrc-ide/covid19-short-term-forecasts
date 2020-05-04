@@ -369,7 +369,7 @@ I_{i, t}^{true} \sim I_{i, t}^{r} + NBin(I_{i, t}^{r}, \rho_{i,
 t}).
 \]</span></p>
 <p>To obtain forecast of deaths, we rely on reported cases to obtain <span class="math inline">\(\int\limits_0^{\infty}{\Gamma(x \mid \mu,\sigma)I_{i, t - x}^{r}dx}\)</span>. As cases reported in the coming week may die within the same week ( i.e. for <span class="math inline">\(x \in \{0,7\}\)</span>, <span class="math inline">\(\Gamma(x \mid \mu,\sigma) &gt; 0\)</span>), we estimate new reporting cases in the coming week by sampling from a Gamma distribution with mean and standard deviation estimated from the number of observed cases in the last week.</p>
-<p>While this assumes no growth or decline in the coming week, this baseline assumtpion is justfiable as a null-hypthesis scenario as it does not influence our results dramatically given the contribution to deaths due to those being very small (i.e. less than 2%).</p>
+<p>While this assumes no growth or decline in the coming week, this baseline assumtpion is justfiable as a null-hypothesis scenario as it does not influence our results dramatically given the contribution to deaths due to those being very small (i.e. less than 2%).</p>
 <p>We therefore obtain the forecasted number of deaths as: <span class="math display">\[
 D_{i, t} \sim Binom\left( \int\limits_0^{\infty}{\Gamma(x \mid \mu,
 \sigma)I_{i, t - x}^{r}dx} , r_{i, \mu}\right).
